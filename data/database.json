@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@example.com",
+      "password": "$2a$10$/rDrli22YqwyMSpZMMsbVeuBsYPCSz7Xu6uxlnXCelxKW66dk/Al6",
+      "role": "admin",
+      "name": "System Administrator"
+    },
+    {
+      "id": 2,
+      "email": "user@example.com",
+      "password": "$2a$10$EFpWT2s1AEk.5KmOJIF/P.SXso2.yV1ZOtbfM075yy7xO6DW7VkW2",
+      "role": "user",
+      "name": "Regular Person",
+      "preferences": {}
+    },
+    {
+      "id": 3,
+      "email": "harald@example.com",
+      "password": "$2a$10$sRy.OHsOcA.AyIEjGwJOm.iKcVkvNK2bO1PdQ1hkuK3OR7slnXg4K",
+      "role": "user",
+      "name": "Harald Bluetooth"
+    },
+    {
+      "id": 4,
+      "email": "hacker@example.com",
+      "password": "$2a$10$e1pt3hr/iAU6.U3zl19r/uYjCZmVoY5sZVbPSSSHBlbinBOkLBANu",
+      "role": "admin",
+      "name": "Very Kind Person"
+    },
+    {
+      "id": 1761209501307,
+      "email": "attacker10@example.com",
+      "password": "$2a$10$VDKYcJfuNZQB8R4a5PiXwuFaWsgitfENlMfXipcCyf/v4GHvqj6My",
+      "name": "Attacker",
+      "role": "user",
+      "profile": {}
+    }
+  ],
+  "config": {
+    "debug": false,
+    "maxLoginAttempts": 5
+  }
+}

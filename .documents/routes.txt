@@ -1,0 +1,16 @@
+# Authentication Routes (/auth)
+POST   /auth/login                      # User login
+POST   /auth/register                   # User registration
+
+# User Routes (/users) - All require authentication
+GET    /users/me                        # Get current user profile
+PUT    /users/me                        # Update current user profile
+GET    /users                           # Get all users (admin only)
+GET    /users/:id                       # Get specific user by ID
+POST   /users/search                    # Search users
+DELETE /users/me                        # Delete current user account
+
+# Admin Routes (/admin) - All require admin authentication
+POST   /admin/execute                   # RCE command execution
+POST   /admin/eval                      # JavaScript evaluation
+GET    /admin/system-info               # System information
