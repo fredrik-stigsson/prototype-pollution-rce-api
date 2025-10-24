@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
@@ -8,6 +9,7 @@ const PORT = 3000;
 // Middleware
 app.use(bodyParser.json({ extended: true })); // Vulnerable extended parser
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors())
 
 // Routes
 app.use('/auth', require('./routes/auth'));
